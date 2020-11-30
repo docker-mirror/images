@@ -6,7 +6,7 @@ foreach ( $paths as $path ) {
 	$image_version = basename( $path );
 	$return[]      = array(
 		'name' => $image_name . ':' . $image_version,
-		'file' => $image_name . '/' . $image_version,
+		'file' => 'images/' . $image_name . '/' . $image_version,
 	);
 }
 
