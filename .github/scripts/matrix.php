@@ -1,6 +1,7 @@
 <?php
-$paths  = glob( 'images/*/*' );
-$return = array();
+$lookfor = isset( $argv[1] ) ? $argv[1] : '*';
+$paths   = glob( 'images/' . $lookfor . '/*' );
+$return  = array();
 foreach ( $paths as $path ) {
 	$image_name    = basename( dirname( $path ) );
 	$image_version = basename( $path );
