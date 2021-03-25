@@ -62,7 +62,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GH_WRITE_PACKAGES }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "🎉  Build &  🚀  Publish"
         uses: docker/build-push-action@master
